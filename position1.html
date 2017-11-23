@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>position</title>
+
+  <style>
+
+
+* {
+
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+
+}
+div{
+  border: solid blue 20px;
+  width:600px;
+}
+
+.static{
+  position:static;
+}
+
+.relative{
+
+  position:relative;
+  /*Nothing happens because without extra properties it behaves like a static */
+}
+
+.realative{
+  position:relative;
+  top:-200px;
+  left:65%;
+  width:300px;
+
+}
+
+.fixed{
+  position:fixed;
+  bottom:0;
+  right:0;
+  width:60px;
+}
+
+.real{
+  margin-top:100px;
+  position:relative;
+  width:800px;
+  right:0;
+  margin-right:50px;
+  height:500px
+}
+
+.absolute{
+  position:absolute;
+  right:0;
+  bottom:0;
+  width:200px;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="static">
+<p>Love deceptions derive disgust suicide free convictions free zarathustra. Chaos against inexpedient endless moral marvelous passion. Oneself ideal ocean.
+</p>
+  </div>
+
+  <div class ="relative">
+    <p>Love deceptions derive disgust suicide free convictions free zarathustra. Chaos against inexpedient endless moral marvelous passion. Oneself ideal ocean.
+    </p>
+  </div>
+
+  <div class="realative">
+
+    <p>Love deceptions derive disgust suicide free convictions free zarathustra. Chaos against inexpedient endless moral marvelous passion. Oneself ideal ocean.
+    </p>
+  </div>
+
+  <div class="fixed">
+    <p>
+      Love deceptions derive
+    </p>
+  </div>
+
+<br/>
+<div class="real">
+  <p> If two witches could watch two watches which witch would watch which watch?
+  </p>
+  <p> That's a real ass question </p>
+
+
+  <div class="absolute">
+    <p>Insofar oneself endless christian revaluation superiority convictions free against decieve salvation convictions morality endless. Horror madness marvelous disgust faith grandeur insofar value deceptions ascetic derive. Marvelous war abstract christian ubermensch ubermensch justice strong moral ascetic.
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
